@@ -78,7 +78,7 @@ if weight <= 115:
             fin_selection.append(stuff)
 
 
-if weight >= 105 and weight <= 115:
+if weight >= 105 and weight <= 145:
     if fin_config.lower() == 'thruster':
         for stuff in small_thrusters:
             fin_selection.append(stuff)
