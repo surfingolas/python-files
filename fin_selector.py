@@ -18,7 +18,7 @@ medium_qrs = ['QD2 4.0 Blackstix', 'QD2 4.0 Alpha', 'QD2 4.0 Honeycomb']
 large_thrusters = ['Ando Blackstix', 'F8 Blackstix', 'Roberts Large Generation Series', 'Freestone Generation Series', 'HS1 Generation Series', 'F8 Alpha', 'AM2 Honeycomb',
                    'F8 Honeycomb', 'Firewire Large Honeycomb', 'Jordy Large Honeycomb', 'AM2 Techflex', 'John John Large Techflex', 'Freestone Control Series',
                    'Pyzel Large Control Series', 'Pancho Large Control Series' ] #fill with all thrusters in the large category
-large_quads = ['Controller Alpha', 'Controller Honeycomb/Bamboo']
+large_quads = ['Controller Alpha', 'Controller Honeycomb/Bamboo', 'F8 Honeycomb']
 large_5fins = ['F8 Alpha', 'F8 Honeycomb', 'Firewire Large Honeycomb', 'Lost Large Honeycomb', 'AM2 Techflex', 'Twiggy Control Series']
 large_qrs = ['QD2 4.15 Blackstix', 'HS QR Generation Series', 'QD2 4.15 Honeycomb']
 fin_selection = [] #the running list filled with selections given in each category
@@ -38,7 +38,7 @@ ride_dict = {'HS3 Generation Series' : 8.5, 'F2 Honeycomb': 4.6, 'John Grom Hone
 
 # figure out what setup the person is using
 while True:
-    fin_fun = str(input("what kind of setup are you on?(thruster/quad/5-fin/Quad Rear) or for more information type 'help'. To exit type 'exit'"))
+    fin_fun = input("what kind of setup are you on?(thruster/quad/5-fin/Quad Rear) or for more information type 'help'. To exit type 'exit'")
     if fin_fun.lower() in fin_config_check:
         fin_config = fin_fun.lower()
         break
@@ -209,3 +209,5 @@ for stuff in ride_no_list:
 fun.sort()
 for value,key in fun:
     print(key,fin_config,"--Ride number",value)
+if len(fun) < 1:
+    print("sorry, looks like nothing matches your parameters.  Check our website for more details or try again")
