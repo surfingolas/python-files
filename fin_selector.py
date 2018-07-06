@@ -201,5 +201,11 @@ if not ride_num:
                         else:
                             continue
         break
+fun = []
 for stuff in ride_no_list:
-    print(stuff,fin_config,"--Ride number-",float(ride_dict[stuff]))
+    for key, value in ride_dict.items():
+        if stuff == key:
+            fun.append((value,key))
+fun.sort()
+for value,key in fun:
+    print(key,fin_config,"--Ride number",value)
