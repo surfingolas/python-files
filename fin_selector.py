@@ -38,7 +38,7 @@ ride_dict = {'HS3 Generation Series' : 8.5, 'F2 Honeycomb': 4.6, 'John Grom Hone
 
 # figure out what setup the person is using
 while True:
-    fin_fun = input("what kind of setup are you on?(thruster/quad/5-fin/Quad Rear) or for more information type 'help'. To exit type 'exit'")
+    fin_fun = str(input("what kind of setup are you on?(thruster/quad/5-fin/Quad Rear) or for more information type 'help'. To exit type 'exit'"))
     if fin_fun.lower() in fin_config_check:
         fin_config = fin_fun.lower()
         break
