@@ -1,7 +1,7 @@
 import urllib.request, urllib.parse, urllib.error
 import json
 
-serviceurl = 'https://raw.githubusercontent.com/adrpadua/5e-database/master/5e-SRD-Ability-Scores.json'
+serviceurl = 'http://www.dnd5eapi.co/api/monsters'
 
 
 
@@ -22,5 +22,5 @@ if not js:
 
 print(json.dumps(js, indent=4))
 
-
-print(js[0]['desc'])
+for stuff in js["results"]:
+    print(stuff['name'])
