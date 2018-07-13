@@ -6,7 +6,7 @@
 		"url": "http://www.dnd5eapi.co/api/ability-scores/1",
 		"name": "DEX"
 	},
-	"url": "http://www.dnd5eapi.co/api/skills/1"
+	"url": "https://raw.githubusercontent.com/surfingolas/python-files/master/5e-database-master/Acroupdate.json"
 }, {
 	"index": 2,
 	"name": "Animal Handling",
