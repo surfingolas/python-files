@@ -14,7 +14,7 @@
 	"full_name": "Dexterity",
 	"desc": ["Dexterity measures agility, reflexes, and balance.", "A Dexterity check can model any attempt to move nimbly, quickly, or quietly, or to keep from falling on tricky footing. The Acrobatics, Sleight of Hand, and Stealth skills reflect aptitude in certain kinds of Dexterity checks."],
 	"skills": [{
-		"url": "http://www.dnd5eapi.co/api/skills/1",
+		"url": "https://raw.githubusercontent.com/surfingolas/python-files/master/5e-database-master/Acroupdate.json",
 		"name": "Acrobatics"
 	}, {
 		"url": "http://www.dnd5eapi.co/api/skills/16",
