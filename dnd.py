@@ -4,9 +4,9 @@ import json
 player_atts = []
 player_dict = dict()
 player_dict_lst = [{'core' : 0}]
-serviceurl = 'http://www.dnd5eapi.co/api/'
+serviceurl = 'https://raw.githubusercontent.com/surfingolas/python-files/master/5e-database-master/5e-SRD'
 
-extend = 'Ability-Scores'
+extend = '-Ability-Scores.json'
 
 url = serviceurl + extend
 
@@ -14,6 +14,7 @@ uh = urllib.request.urlopen(url)
 data = uh.read().decode()
 js = json.loads(data)
 
+print(json.dumps(js, indent=4))
 
 for stuff in js['results']:#finds the core skills
     atts_url = stuff["url"]
@@ -29,7 +30,7 @@ for stuff in js['results']:#finds the core skills
         skill_data = skill_sock.read().decode()
         skill_js = json.loads(skill_data)
         print(json.dumps(skill_js, indent=4))
-        
+
 
 
 
